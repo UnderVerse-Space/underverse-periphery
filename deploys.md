@@ -1,19 +1,19 @@
 # Deployment addresses
 
-The latest version of `@uniswap/v3-core`, `@uniswap/v3-periphery` are deployed to Ethereum mainnet and all testnets
+The latest version of `@underverse/core`, `@uniswap/v3-periphery` are deployed to Ethereum mainnet and all testnets
 at the same addresses.
 
-The source code is verified with Etherscan on all networks, for all contracts except `UniswapV3Pool`.
-We are working on getting the `UniswapV3Pool` contract verified with Etherscan.
+The source code is verified with Etherscan on all networks, for all contracts except `UnderVersePool`.
+We are working on getting the `UnderVersePool` contract verified with Etherscan.
 
 These addresses are final and were deployed from these npm package versions:
 
-- `@uniswap/v3-core`: [`1.0.0`](https://github.com/Uniswap/uniswap-v3-core/tree/v1.0.0)
+- `@underverse/core`: [`1.0.0`](https://github.com/Uniswap/uniswap-v3-core/tree/v1.0.0)
 - `@uniswap/v3-periphery`: [`1.0.0`](https://github.com/Uniswap/uniswap-v3-periphery/tree/v1.0.0)
 
 | Contract                           | Address                                      | Source Code                                                                                                                   |
 | ---------------------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| UniswapV3Factory                   | `0x1F98431c8aD98523631AE4a59f267346ea31F984` | https://github.com/Uniswap/uniswap-v3-core/blob/v1.0.0/contracts/UniswapV3Factory.sol                                         |
+| UnderVerseFactory                   | `0x1F98431c8aD98523631AE4a59f267346ea31F984` | https://github.com/Uniswap/uniswap-v3-core/blob/v1.0.0/contracts/UnderVerseFactory.sol                                         |
 | Multicall2                         | `0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696` | https://etherscan.io/address/0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696#code                                                  |
 | ProxyAdmin                         | `0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2` | https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.4.1-solc-0.7-2/contracts/proxy/ProxyAdmin.sol                  |
 | TickLens                           | `0xbfd8137f7d1516D3ea5cA83523914859ec47F573` | https://github.com/Uniswap/uniswap-v3-periphery/blob/v1.0.0/contracts/lens/TickLens.sol                                       |

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 pragma solidity >=0.5.0 <0.8.0;
 
-import '@uniswap/v3-core/contracts/libraries/FullMath.sol';
-import '@uniswap/v3-core/contracts/libraries/TickMath.sol';
-import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
-import '@uniswap/v3-core/contracts/libraries/LowGasSafeMath.sol';
+import '@underverse/core/contracts/libraries/FullMath.sol';
+import '@underverse/core/contracts/libraries/TickMath.sol';
+import '@underverse/core/contracts/interfaces/IUnderVersePool.sol';
+import '@underverse/core/contracts/libraries/LowGasSafeMath.sol';
 import '../libraries/PoolAddress.sol';
 
 /// @title Oracle library
@@ -21,7 +21,7 @@ library OracleLibrary {
         secondAgos[0] = period;
         secondAgos[1] = 0;
 
-        (int56[] memory tickCumulatives, ) = IUniswapV3Pool(pool).observe(secondAgos);
+        (int56[] memory tickCumulatives, ) = IUnderVersePool(pool).observe(secondAgos);
         int56 tickCumulativesDelta = tickCumulatives[1] - tickCumulatives[0];
 
         timeWeightedAverageTick = int24(tickCumulativesDelta / period);

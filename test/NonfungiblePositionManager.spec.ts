@@ -7,7 +7,7 @@ import {
   MockTimeNonfungiblePositionManager,
   TestERC20,
   IWETH9,
-  IUniswapV3Factory,
+  IUnderVerseFactory,
   SwapRouter,
 } from '../typechain'
 import completeFixture from './shared/completeFixture'
@@ -24,7 +24,7 @@ import { expandTo18Decimals } from './shared/expandTo18Decimals'
 import { sortedTokens } from './shared/tokenSort'
 import { extractJSONFromURI } from './shared/extractJSONFromURI'
 
-import { abi as IUniswapV3PoolABI } from '@uniswap/v3-core/artifacts/contracts/interfaces/IUniswapV3Pool.sol/IUniswapV3Pool.json'
+import { abi as IUnderVersePoolABI } from '@underverse/core/artifacts/contracts/interfaces/IUnderVersePool.sol/IUnderVersePool.json'
 
 describe('NonfungiblePositionManager', () => {
   let wallets: Wallet[]
@@ -32,7 +32,7 @@ describe('NonfungiblePositionManager', () => {
 
   const nftFixture: Fixture<{
     nft: MockTimeNonfungiblePositionManager
-    factory: IUniswapV3Factory
+    factory: IUnderVerseFactory
     tokens: [TestERC20, TestERC20, TestERC20]
     weth9: IWETH9
     router: SwapRouter
@@ -55,7 +55,7 @@ describe('NonfungiblePositionManager', () => {
     }
   }
 
-  let factory: IUniswapV3Factory
+  let factory: IUnderVerseFactory
   let nft: MockTimeNonfungiblePositionManager
   let tokens: [TestERC20, TestERC20, TestERC20]
   let weth9: IWETH9
@@ -131,7 +131,7 @@ describe('NonfungiblePositionManager', () => {
         FeeAmount.MEDIUM
       )
       await factory.createPool(tokens[0].address, tokens[1].address, FeeAmount.MEDIUM)
-      const pool = new ethers.Contract(expectedAddress, IUniswapV3PoolABI, wallet)
+      const pool = new ethers.Contract(expectedAddress, IUnderVersePoolABI, wallet)
 
       await pool.initialize(encodePriceSqrt(3, 1))
       const code = await wallet.provider.getCode(expectedAddress)

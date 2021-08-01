@@ -1,20 +1,20 @@
 {
-  "name": "@uniswap/v3-periphery",
-  "description": "🎚 Peripheral smart contracts for interacting with Uniswap V3",
+  "name": "@underverse/periphery",
+  "description": "🎚 Peripheral smart contracts for interacting with UnderVerse Space",
   "license": "GPL-2.0-or-later",
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.1.1",
-  "homepage": "https://uniswap.org",
+  "version": "1.0.1",
+  "homepage": "https://underverse.space",
   "keywords": [
-    "uniswap",
+    "underverse",
     "periphery",
-    "v3"
+    "binance"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Uniswap/uniswap-v3-periphery"
+    "url": "https://github.com/UnderVerse-Space/underverse-periphery.git"
   },
   "files": [
     "contracts/base",
@@ -30,9 +30,9 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "3.4.1-solc-0.7-2",
-    "@uniswap/lib": "^4.0.1-alpha",
+    "@underverse/lib": "1.0.0",
     "@uniswap/v2-core": "1.0.1",
-    "@uniswap/v3-core": "1.0.0",
+    "@underverse/core": "1.0.0",
     "base64-sol": "1.0.1",
     "hardhat-watcher": "^2.1.1"
   },

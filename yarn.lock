@@ -996,18 +996,19 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@uniswap/lib@^4.0.1-alpha":
-  version "4.0.1-alpha"
-  resolved "https://registry.yarnpkg.com/@uniswap/lib/-/lib-4.0.1-alpha.tgz#2881008e55f075344675b3bca93f020b028fbd02"
+"@underverse/core@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@underverse/core/-/core-1.0.0.tgz#818a5fde3357a5f34361e6acaa2bea482b7f95b1"
+  integrity sha512-rVhT6E1SWwOKxo2GWaS87hk7SM4PYiBDQ3cA5uq9dE++OWFDRIPr+dyczNnqQ3hXPkUEPRpkDuYzKWL38GNlkA==
+
+"@underverse/lib@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@underverse/lib/-/lib-1.0.0.tgz#b15101cd6d1ad47f652273a72c78e09ca6e2be8d"
+  integrity sha512-ZsdCkNkSQ+0Dhr/MaQMv0ouq26VuNyX7/dxGjTPa6iBOovFmuxUqE2ESq9gE+jK4Dqegc4vkb2s8aP7ZD53+sw==
 
 "@uniswap/v2-core@1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@uniswap/v2-core/-/v2-core-1.0.1.tgz#af8f508bf183204779938969e2e54043e147d425"
-
-"@uniswap/v3-core@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@uniswap/v3-core/-/v3-core-1.0.0.tgz#6c24adacc4c25dceee0ba3ca142b35adbd7e359d"
-  integrity sha512-kSC4djMGKMHj7sLMYVnn61k9nu+lHjMIxgg9CDQT+s2QYLoA56GbSK9Oxr+qJXzzygbkrmuY6cwgP6cW2JXPFA==
 
 "@yarnpkg/lockfile@^1.1.0":
   version "1.1.0"
